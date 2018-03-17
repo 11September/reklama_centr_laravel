@@ -111,6 +111,10 @@ a, a:hover, a:visited, a:link {
     z-index: 5;
 }
 
+.top-menu_logo img{
+    height: 80px;
+}
+
 .top-menu {
     display: flex;
     justify-content: center;
@@ -215,7 +219,7 @@ a, a:hover, a:visited, a:link {
     font-size: 60px;
     color: white;
     width: 47px !important;
-    height: 47px;
+    height: 50px;
     background: black;
     padding: 10px;
 }
