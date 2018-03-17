@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-lg-2 col-sm-3 col-12">
-
                     <div class="footer-wrapper-logo-social">
                         <div class="footer-wrapper-logo">
-                            <img src="images/footer-logo.png" alt="footer-logo">
+                            <a href="index.html">
+                                <img src="images/footer-logo.png" alt="footer-logo">
+                            </a>
                         </div>
-
                         <div class="footer-wrapper-social">
                             <div class="wrapper-wrapper-social-block">
                                 <a class="social-link" href="#">
@@ -29,7 +29,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-9">
                     <div class="footer-wrapper-about">
@@ -60,20 +59,17 @@
                             <li><a href="">Аренда рекламных плоскостей</a></li>
                             <li><a href="">Реклама на/в транспорте</a></li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-6">
                     <div class="footer-wrapper-production">
                         <h5>ПРОДУКЦИЯ</h5>
-
                         <ul class="footer-services-menu">
                             <li><a href="">Наружная реклама</a></li>
                             <li><a href="">Интерьерная реклама</a></li>
                             <li><a href="">Полиграфия</a></li>
                             <li><a href="">Рекламно-сувенирная продукция</a></li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -86,14 +82,26 @@
                     <div class="footer-bottom-sitemap">
                         <p class="footer-bottom-sitemap-sitemap text-red">Карта сайта</p>
                         <div class="footer-bottom-sitemap-copyright">
-                            <p>© 2008 - 2018 Рекламно-производственное агентство «Реклама Центр».</p>
+                            <p>© 2008 -
+                                <script>document.write(new Date().getFullYear())</script>
+                                Рекламно-производственное агентство «Реклама Центр».
+                            </p>
                             <p>Все права защищены. Перепечатка материалов без письменного согласия запрещена!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <p class="madeBy">
-                        Разработано <span class="text-red pad2"> LocalService</span>
+                        Разработано
+
+                        <span class="text-red pad2">
+                            @if (rand(1,1000) == 1000)
+                                Made with <i class="fas fa-heart"></i>
+                                by <a style="color: #ef3a41" href="http://redbox.in.ua/" target="_blank">Redbox</a>
+                            @else
+                                 LocalService
+                            @endif
+                        </span>
                     </p>
                 </div>
             </div>

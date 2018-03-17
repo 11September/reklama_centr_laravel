@@ -28,8 +28,6 @@
                         <div class="bottom-block">
                             <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
                                 цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
                             </p>
                         </div>
                     </div>
@@ -160,7 +158,7 @@
 
             <div class="categories_item">
                 <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_1.png">
+                    <img class="categories_item_visible"src="images/categories_item_1.png">
                     <img class="categories_item_hover" src="images/categories_item_6.png">
                     <p>
                         ДИЗАЙН
@@ -242,7 +240,6 @@
         <div class="container">
 
             <div class="row our_works_header">
-
                 <div class="col-lg-7 col-md-5 our_works_header_left">
                     <img src="images/our_works_delimiter.png">
                     <span>Категории</span>
@@ -252,9 +249,7 @@
                     <img src="images/our_works_delimiter.png">
                     <h2>Наши работы</h2>
                 </div>
-
             </div>
-
 
             <div class="row">
                 <div class="col-sm-12 our_works_switch">
@@ -266,8 +261,6 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 our_works_left_blok">
-
-
                     <ul class="simplefilter our_works_panel">
                         <li class="fltr-controls active" data-filter="1">Дизайн</li>
                         <li class="fltr-controls" data-filter="2">Полиграфия</li>
@@ -276,7 +269,6 @@
                         <li class="fltr-controls" data-filter="5">Сувенирная продукция</li>
                         <li class="fltr-controls" data-filter="6">Печать на футболках/ткани</li>
                     </ul>
-
                     <div class="link_portfolio">
                         <a href="#">
                             <img src="images/our_works_delimiter.png">
@@ -286,297 +278,213 @@
                 </div>
 
                 <div class="col-lg-8 col-md-6 col-sm-12 our_works_right_blok">
-
                     <div class="row push-down">
                         <div class="filtr-container">
-
-                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5"
-                                 data-sort="Busy streets">
+                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
                                 <a href="images/our_works_item_1.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_1.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 2"
-                                 data-sort="Luminous night">
+                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 2" data-sort="Luminous night">
                                 <a href="images/our_works_item_2.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_2.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4"
-                                 data-sort="City wonders">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="City wonders">
                                 <a href="images/our_works_item_3.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_3.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 3"
-                                 data-sort="In production">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 3" data-sort="In production">
                                 <a href="images/our_works_item_4.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_4.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4"
-                                 data-sort="Industrial site">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="Industrial site">
                                 <a href="images/our_works_item_5.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_5.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4"
-                                 data-sort="Peaceful lake">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="Peaceful lake">
                                 <a href="images/our_works_item_6.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_6.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5"
-                                 data-sort="City lights">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5" data-sort="City lights">
                                 <a href="images/our_works_item_7.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_7.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 6"
-                                 data-sort="Dreamhouse">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 6" data-sort="Dreamhouse">
                                 <a href="images/our_works_item_8.png" data-fancybox>
                                     <img class="img-responsive" src="images/our_works_item_8.png">
                                     <img class="our_works_img_hover" src="images/our_works_item_7.png">
                                 </a>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
     </section>
 
     <section id="Our-Clients">
         <div class="all-bung">
-
             <div class="container">
                 <div class="row">
-
-
                     <div class="wrapper-text col-md-6">
-
                         <p>
-                            НАМ ДОВЕРЯЮТ <span class="delete-crt"> СОЗДАВАТЬ РЕКЛАМУ </span>
+                            НАМ ДОВЕРЯЮТ  <span class="delete-crt"> СОЗДАВАТЬ РЕКЛАМУ </span>
                             С 2008 года
                         </p>
-
                     </div>
-
                     <div class="wrapper-text-2 col-md-6">
-
                         <h2 class="Ourclients"> НАШИ КЛИЕНТЫ </h2>
-
                     </div>
-
-
                 </div>
-
-                <div class="row">
-
-                    <div class="wrapper-picture-items-cosial col-md-4 col-sm-6">
-                        <div class="icon-social">
-                            <a href="#"><i class="fab fa-soundcloud"></i> </a>
-                        </div>
-                        <div class="icon-social">
-                            <a href="#"> <i class="fab fa-stumbleupon"></i> </a>
-                        </div>
-                        <div class="icon-social">
-                            <i class="fab fa-tumblr"></i>
-                        </div>
-                        <div class="icon-social">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-
-                    </div>
-
-                    <div class="wrapper-picture-items-cosial col-md-4 col-sm-6">
-
-                        <div class="icon-social">
-                            <a href="#"> <img src="images/viddler.png"> </a>
-                        </div>
-                        <div class="icon-social">
-                            <i class="fab fa-vimeo-v"></i>
-                        </div>
-                        <div class="icon-social">
-                            <a href="#"> <img src="images/virb.png"> </a>
-                        </div>
-
-                        <div class="icon-social">
-                            <i class="fab fa-wordpress"></i>
-                        </div>
-                    </div>
-
-
-                    <div class="wrapper-picture-items-cosial col-md-4 col-sm-12">
-
-
-                        <div class="icon-social">
-                            <i class="fab fa-yahoo"></i>
-                        </div>
-                        <div class="icon-social">
-                            <i class="fab fa-yelp"></i>
-                        </div>
-                        <div class="icon-social">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="icon-social">
-                            <a href="#"> <img src="images/zerply.png"> </a>
-                        </div>
-                    </div>
+                <div class="row oborot">
+                    <a href="#"><div class="bg-img-1 all-item"></div></a>
+                    <a href="#"><div class="bg-img-2 all-item"></div></a>
+                    <a href="#"><div class="bg-img-3 all-item"></div></a>
+                    <a href="#"><div class="bg-img-4 all-item"></div></a>
+                    <a href="#"><div class="bg-img-5 all-item"></div></a>
+                    <a href="#"><div class="bg-img-6 all-item"></div></a>
+                    <a href="#"> <div class="bg-img-7 all-item"></div></a>
+                    <a href="#"><div class="bg-img-8 all-item"> </div></a>
+                    <a href="#"> <div class="bg-img-9 all-item"></div></a>
+                    <a href="#"><div class="bg-img-10 all-item"></div></a>
+                    <a href="#"><div class="bg-img-11 all-item"></div></a>
+                    <a href="#"><div class="bg-img-12 all-item"></div></a>
                 </div>
             </div>
-
-
         </div>
-
-
     </section>
 
     <section id="Our-Team">
-
         <div class="container">
             <div class="row">
                 <div class="wrapper-text-2 col-md-12">
-
                     <h2 class="OurTeam"> НАША КОМАНДА</h2>
-
                 </div>
             </div>
-
 
             <div class="row">
                 <div class="description-picture col-md-4">
                     <div class="solo-wrapper-block">
                         <div class="individual-picture">
-
-                            <img src="images/judah.png">
+                            <img class="image-ov"  src="images/judah.png">
+                            <div class="red-overlay">
+                                <p CLASS="overlay-text">Директор/основатель</p>
+                            </div>
                         </div>
                         <p class="director"> ИМЯ. Директор/основатель. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                            augue at
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at
                             erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit
-                            metus
+                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus
                             diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                            himenaeos.</p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                         <div class="wrapper-oborot">
-                            <div class="icon-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            <div class="icon-social icon-size-1">
+                                <a  href="#"><i class="fab fa-twitter"></i></a>
                             </div>
-                            <div class="icon-social">
+                            <div class="icon-social icon-size-2">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
-                            <div class="icon-social">
+                            <div class="icon-social icon-size-3">
                                 <a href="#"><i class="fab fa-google-plus"></i></a>
                             </div>
-                            <div class="icon-social">
-                                <a href="#"><i class="fab fa-skype"></i></a>
+                            <div class="icon-social icon-size-9">
+                                <a href="#"><i class="fab fa-behance"></i></a>
                             </div>
 
-                            <div class="icon-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <div class="icon-social icon-size-10">
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
-
                         </div>
                     </div>
-
-
                 </div>
-
 
                 <div class="description-picture col-md-4">
-
                     <div class="solo-wrapper-block">
                         <div class="individual-picture">
-                            <img src="images/Rectangle-6-copy.png">
+                            <img src="images/judah.png">
+                            <div class="red-overlay">
+                                <p CLASS="overlay-text">НАЧАЛЬНИК ПРОИЗВОДСТВА</p>
+                            </div>
                         </div>
-                        <p class="director"> ИМЯ. Директор/основатель. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                            augue at erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit
-                            metus diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                            himenaeos.</p>
+                        <p class="director">  ИМЯ. Начальник производства. </p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.
+                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
                         <div class="wrapper-oborot">
-
-                            <div class="icon-social">
+                            <div class="icon-social col-md-2 icon-size-6">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                             </div>
-                            <div class="icon-social">
+                            <div class="icon-social col-md-2 icon-size-7">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="icon-social col-md-2 icon-size-8">
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+                            </div>
+                            <div class="icon-social col-md-2 icon-size-9">
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+
+                            <div class="icon-social col-md-2 icon-size-10">
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="description-picture col-md-4">
                     <div class="solo-wrapper-block">
                         <div class="individual-picture">
                             <img src="images/Layer-17.png">
+                            <div class="red-overlay">
+                                <p CLASS="overlay-text">Ведущий дизайнер</p>
+                            </div>
                         </div>
 
-                        <p class="director"> ИМЯ. Директор/основатель. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
-                            augue at
+                        <p class="director"> ИМЯ. Ведущий дизайнер. </p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at
                             erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit
-                            metus
+                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus
                             diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                            himenaeos.</p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                         <div class="wrapper-oborot">
-                            <div class="icon-social col-md-2">
+                            <div class="icon-social col-md-2 icon-size-6">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                             </div>
-                            <div class="icon-social col-md-2 ">
+                            <div class="icon-social col-md-2 icon-size-7">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
-                            <div class="icon-social col-md-2">
+                            <div class="icon-social col-md-2 icon-size-8">
                                 <a href="#"><i class="fab fa-google-plus"></i></a>
                             </div>
-                            <div class="icon-social col-md-2">
+                            <div class="icon-social col-md-2 icon-size-9">
                                 <a href="#"><i class="fab fa-behance"></i></a>
                             </div>
 
-                            <div class="icon-social col-md-2">
+                            <div class="icon-social col-md-2 icon-size-10">
                                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
-
             <div class="about-company">
                 <h2> О КОМПАНИИ</h2>
             </div>
         </div>
-
     </section>
 
     <section class="contact">
@@ -607,8 +515,6 @@
                     </div>
                     <div class="col-md-12 col-lg-4">
                         <div class="wrapper-contacts-contact-area">
-
-
                             <div class="contacts-contact-one-block">
                                 <h5>КОНТАКТЫ:</h5>
 

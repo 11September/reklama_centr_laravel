@@ -32,6 +32,16 @@ class WelcomeController extends Controller
         return view('service');
     }
 
+    public function search()
+    {
+        return view('search');
+    }
+
+    public function serch_result(Request $request)
+    {
+        return view('search-result');
+    }
+
     public function contact(Request $request)
     {
         $this->validate($request, [
