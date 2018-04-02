@@ -247,7 +247,7 @@ a, a:hover, a:visited, a:link {
 .manu-list li a {
     color: white;
     background: #ef3a41;
-    padding: 15px 40px 15px 25px;
+    padding: 13px 40px 15px 25px;
     display: inline-block;
     transform: skewX(-10deg);
     margin-right: 5px;

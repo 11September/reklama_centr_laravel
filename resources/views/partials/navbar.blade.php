@@ -24,16 +24,10 @@
 
                             <li>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary menu-btn dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
+                                    <a href="#" class="menu-btn">
                                         <img src="{{ asset('images/red-grid-small.png') }}" alt="">
                                         ГЛАВНАЯ
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Наружная реклама</a>
-                                        <a class="dropdown-item" href="#">Полиграфия</a>
-                                    </div>
+                                    </a>
                                 </div>
                             </li>
                             <li>
@@ -65,18 +59,10 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary menu-btn dropdown-toggle" type="button"
-                                            id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                        <img src="{{ asset('images/red-grid-small.png') }}" alt="">
-                                        КОНТАКТЫ
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Наружная реклама</a>
-                                        <a class="dropdown-item" href="#">Полиграфия</a>
-                                    </div>
-                                </div>
+                                <a href="#" class="menu-btn">
+                                    <img src="{{ asset('images/red-grid-small.png') }}" alt="">
+                                    КОНТАКТЫ
+                                </a>
                             </li>
                         </div>
                     </ul>
@@ -85,7 +71,8 @@
 
                 <div class="top-menu_search">
                     <div class="search-box">
-                        <a href="{{ url('/search') }}" class="search-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <a href="{{ url('/search') }}" class="search-link"><i class="fa fa-search"
+                                                                              aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
