@@ -29,6 +29,15 @@ class Page extends Model
         return $services;
     }
 
+    public static function categories()
+    {
+        $services = static::select('id', 'title', 'slug')
+            ->where('link', 'Enable')
+            ->get();
+
+        return $services;
+    }
+
 
     public static function servicesFooter()
     {
