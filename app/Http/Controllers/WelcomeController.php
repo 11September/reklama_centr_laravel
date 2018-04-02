@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Page;
 use App\Risk;
 use App\About;
 use App\Contact;
@@ -27,10 +28,26 @@ class WelcomeController extends Controller
         return view('contact');
     }
 
-    public function service()
+
+    public function services()
     {
         return view('service');
     }
+
+    public function service($slug = null)
+    {
+        $service = Page::select('id', 'title', 'body', 'service_id')
+            ->where('slug', $slug)
+            ->first();
+
+        $related_services = Page::select('id', 'title', 'body')
+            ->where('service_id', $service->service_id)
+            ->get();
+
+        return view('service', compact('service', 'related_services'));
+    }
+
+
 
     public function search()
     {

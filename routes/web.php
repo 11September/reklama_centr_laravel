@@ -13,7 +13,8 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/contact', 'WelcomeController@contacts');
-Route::get('/service', 'WelcomeController@service');
+Route::get('/services', 'WelcomeController@services');
+Route::get('/service-{slug}', 'WelcomeController@service');
 Route::get('/search', 'WelcomeController@search');
 Route::post('/search-result', 'WelcomeController@serch_result');
 

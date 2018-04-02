@@ -4,78 +4,108 @@
         <h2>МЕНЮ РАЗДЕЛА</h2>
     </div>
 
+    {{--{{ dd($menus) }}--}}
+
+
     <div class="service_drunk_menu_right">
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Дизайн</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Изготовление и монтаж наружной рекламы</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Широкоформатная печать</p>
-        </a>
 
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Печать на пленке</p>
-        </a>
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Печать на баннере</p>
-        </a>
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Интерьерная печать</p>
-        </a>
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Печать бигбордов и больших форматов</p>
-        </a>
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Печать на холсте</p>
-        </a>
-        <a class="service_drunk_space service-item" href="">
-            <img src="images/service_drunk_menu_point2.png">
-            <p>Печать на сетке</p>
-        </a>
+        @foreach($menus as $menu)
+            <a class="service-item" href="#">
+                <img src="images/service_drunk_menu_point.png">
+                <p>{{ $menu->name }}</p>
+            </a>
 
-        <br>
+            @if(count($menu->pages))
 
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Лазерная и фрезерная резка и гравировка</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Шелкотрафаретная печать</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Плоттерная порезка</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Производство пластиковых карт</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Изготовление сувенирной продукции</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Брендирование автотранспорта</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Аренда рекламных плоскостей</p>
-        </a>
-        <a class="service-item" href="#">
-            <img src="images/service_drunk_menu_point.png">
-            <p>Реклама на/в транспорте</p>
-        </a>
+                @foreach($menu->pages as $page)
+                    <a class="service_drunk_space service-item" href="{{ url('service-' . $page->slug) }}">
+                        <img src="images/service_drunk_menu_point2.png">
+                        <p>{{ $page->title }}</p>
+                    </a>
+                @endforeach
+
+            @endif
+
+        @endforeach
+
+
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Дизайн</p>--}}
+        {{--</a>--}}
+
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать на баннере</p>--}}
+        {{--</a>--}}
+
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Изготовление и монтаж наружной рекламы</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Широкоформатная печать</p>--}}
+        {{--</a>--}}
+
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать на пленке</p>--}}
+        {{--</a>--}}
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать на баннере</p>--}}
+        {{--</a>--}}
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Интерьерная печать</p>--}}
+        {{--</a>--}}
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать бигбордов и больших форматов</p>--}}
+        {{--</a>--}}
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать на холсте</p>--}}
+        {{--</a>--}}
+        {{--<a class="service_drunk_space service-item" href="">--}}
+            {{--<img src="images/service_drunk_menu_point2.png">--}}
+            {{--<p>Печать на сетке</p>--}}
+        {{--</a>--}}
+
+        {{--<br>--}}
+
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Лазерная и фрезерная резка и гравировка</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Шелкотрафаретная печать</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Плоттерная порезка</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Производство пластиковых карт</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Изготовление сувенирной продукции</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Брендирование автотранспорта</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Аренда рекламных плоскостей</p>--}}
+        {{--</a>--}}
+        {{--<a class="service-item" href="#">--}}
+            {{--<img src="images/service_drunk_menu_point.png">--}}
+            {{--<p>Реклама на/в транспорте</p>--}}
+        {{--</a>--}}
     </div>
 </div>

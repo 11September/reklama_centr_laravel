@@ -24,7 +24,7 @@
 
                             <li>
                                 <div class="dropdown">
-                                    <a href="#" class="menu-btn">
+                                    <a href="{{ url('/') }}" class="menu-btn">
                                         <img src="{{ asset('images/red-grid-small.png') }}" alt="">
                                         ГЛАВНАЯ
                                     </a>
@@ -39,8 +39,11 @@
                                         УСЛУГИ
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Наружная реклама</a>
-                                        <a class="dropdown-item" href="#">Полиграфия</a>
+
+                                        @foreach($services as $service)
+                                            <a class="dropdown-item" href="{{ url('service-' . $service->slug) }}">{{ $service->title }}</a>
+                                        @endforeach
+
                                     </div>
                                 </div>
                             </li>
@@ -53,13 +56,16 @@
                                         ПРОДУКЦИЯ
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Наружная реклама</a>
-                                        <a class="dropdown-item" href="#">Полиграфия</a>
+
+                                        @foreach($productions as $production)
+                                            <a class="dropdown-item" href="{{ url('service-' . $production->slug) }}">{{ $production->title }}</a>
+                                        @endforeach
+
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="menu-btn">
+                                <a href="{{ url('/contact') }}" class="menu-btn">
                                     <img src="{{ asset('images/red-grid-small.png') }}" alt="">
                                     КОНТАКТЫ
                                 </a>
