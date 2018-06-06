@@ -37,72 +37,33 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 our_works_left_blok">
                     <ul class="simplefilter our_works_panel">
-                        <li class="fltr-controls active" data-filter="1">Дизайн</li>
-                        <li class="fltr-controls" data-filter="2">Полиграфия</li>
-                        <li class="fltr-controls" data-filter="3">Наружная реклама</li>
-                        <li class="fltr-controls" data-filter="4">Брендирование транспорта</li>
-                        <li class="fltr-controls" data-filter="5">Сувенирная продукция</li>
-                        <li class="fltr-controls" data-filter="6">Печать на футболках/ткани</li>
+
+                        <li class="fltr-controls active" data-filter="0">Все фото</li>
+                        @foreach($galleries as $gallery)
+                            <li class="fltr-controls" data-filter="{{ $gallery->id }}">{{ $gallery->category }}</li>
+                        @endforeach
+
                     </ul>
-                    <div class="link_portfolio">
-                        <a href="#">
-                            <img src="images/our_works_delimiter.png">
-                            <span>Перейти к портфолио</span>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="col-lg-8 col-md-6 col-sm-12 our_works_right_blok">
                     <div class="row push-down">
                         <div class="filtr-container">
-                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
-                                <a href="images/our_works_item_1.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_1.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 2" data-sort="Luminous night">
-                                <a href="images/our_works_item_2.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_2.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="City wonders">
-                                <a href="images/our_works_item_3.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_3.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 3" data-sort="In production">
-                                <a href="images/our_works_item_4.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_4.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="Industrial site">
-                                <a href="images/our_works_item_5.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_5.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 4" data-sort="Peaceful lake">
-                                <a href="images/our_works_item_6.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_6.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 5" data-sort="City lights">
-                                <a href="images/our_works_item_7.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_7.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="1, 6" data-sort="Dreamhouse">
-                                <a href="images/our_works_item_8.png" data-fancybox>
-                                    <img class="img-responsive" src="images/our_works_item_8.png">
-                                    <img class="our_works_img_hover" src="images/our_works_item_7.png">
-                                </a>
-                            </div>
+
+                            @foreach($galleries as $gallery)
+                                <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="0, {{ $gallery->id }}"
+                                     data-sort="{{ $gallery->category }}">
+
+                                    @foreach($gallery->photos as $photo)
+                                        <a href="{{ "storage/" . $photo->image }}" data-fancybox>
+                                            <img class="img-responsive" src="{{ "storage/" . $photo->image }}">
+                                            <img class="our_works_img_hover" src="{{ asset('images/our_works_item_7.png') }}">
+                                        </a>
+                                    @endforeach
+
+                                </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
@@ -116,7 +77,7 @@
                 <div class="row">
                     <div class="wrapper-text col-md-6">
                         <p>
-                            НАМ ДОВЕРЯЮТ  <span class="delete-crt"> СОЗДАВАТЬ РЕКЛАМУ </span>
+                            НАМ ДОВЕРЯЮТ <span class="delete-crt"> СОЗДАВАТЬ РЕКЛАМУ </span>
                             С 2008 года
                         </p>
                     </div>
@@ -125,18 +86,15 @@
                     </div>
                 </div>
                 <div class="row oborot">
-                    <a href="#"><div class="bg-img-1 all-item"></div></a>
-                    <a href="#"><div class="bg-img-2 all-item"></div></a>
-                    <a href="#"><div class="bg-img-3 all-item"></div></a>
-                    <a href="#"><div class="bg-img-4 all-item"></div></a>
-                    <a href="#"><div class="bg-img-5 all-item"></div></a>
-                    <a href="#"><div class="bg-img-6 all-item"></div></a>
-                    <a href="#"> <div class="bg-img-7 all-item"></div></a>
-                    <a href="#"><div class="bg-img-8 all-item"> </div></a>
-                    <a href="#"> <div class="bg-img-9 all-item"></div></a>
-                    <a href="#"><div class="bg-img-10 all-item"></div></a>
-                    <a href="#"><div class="bg-img-11 all-item"></div></a>
-                    <a href="#"><div class="bg-img-12 all-item"></div></a>
+
+                    @foreach($clients as $client)
+                        <a href="{{ $client->link }}">
+                            <div class="bg-img-clients all-item">
+                                <img src="{{ "storage/" . $client->image }}" alt="">
+                            </div>
+                        </a>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -151,110 +109,56 @@
             </div>
 
             <div class="row">
-                <div class="description-picture col-md-4">
-                    <div class="solo-wrapper-block">
-                        <div class="individual-picture">
-                            <img class="image-ov"  src="images/judah.png">
-                            <div class="red-overlay">
-                                <p CLASS="overlay-text">Директор/основатель</p>
-                            </div>
-                        </div>
-                        <p class="director"> ИМЯ. Директор/основатель. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at
-                            erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus
-                            diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <div class="wrapper-oborot">
-                            <div class="icon-social icon-size-1">
-                                <a  href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                            <div class="icon-social icon-size-2">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                            <div class="icon-social icon-size-3">
-                                <a href="#"><i class="fab fa-google-plus"></i></a>
-                            </div>
-                            <div class="icon-social icon-size-9">
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
 
-                            <div class="icon-social icon-size-10">
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="description-picture col-md-4">
-                    <div class="solo-wrapper-block">
-                        <div class="individual-picture">
-                            <img src="images/judah.png">
-                            <div class="red-overlay">
-                                <p CLASS="overlay-text">НАЧАЛЬНИК ПРОИЗВОДСТВА</p>
-                            </div>
-                        </div>
-                        <p class="director">  ИМЯ. Начальник производства. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                @foreach($teams as $person)
 
-                        <div class="wrapper-oborot">
-                            <div class="icon-social col-md-2 icon-size-6">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                    <div class="description-picture col-md-4">
+                        <div class="solo-wrapper-block">
+                            <div class="individual-picture">
+                                <img class="image-ov" src="{{ asset('storage/' . $person->image) }}">
+                                <div class="red-overlay">
+                                    <p CLASS="overlay-text">{{ $person->position }}</p>
+                                </div>
                             </div>
-                            <div class="icon-social col-md-2 icon-size-7">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                            <div class="icon-social col-md-2 icon-size-8">
-                                <a href="#"><i class="fab fa-google-plus"></i></a>
-                            </div>
-                            <div class="icon-social col-md-2 icon-size-9">
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
+                            <p class="director">{{ $person->name }}</p>
+                            <p class="description">{{ $person->description }}</p>
+                            <div class="wrapper-oborot">
 
-                            <div class="icon-social col-md-2 icon-size-10">
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                @if($person->twitter)
+                                    <div class="icon-social icon-size-1">
+                                        <a href="{{ $person->twitter  }}"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                @endif
+
+                                @if($person->facebook)
+                                    <div class="icon-social icon-size-2">
+                                        <a href="{{ $person->facebook  }}"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                @endif
+
+                                @if($person->google)
+                                    <div class="icon-social icon-size-3">
+                                        <a href="{{ $person->google }}"><i class="fab fa-google-plus"></i></a>
+                                    </div>
+                                @endif
+
+                                @if($person->behance)
+                                    <div class="icon-social icon-size-9">
+                                        <a href="{{ $person->behance }}"><i class="fab fa-behance"></i></a>
+                                    </div>
+                                @endif
+
+                                @if($person->pinterest)
+                                    <div class="icon-social icon-size-10">
+                                        <a href="{{ $person->pinterest }}"><i class="fab fa-pinterest-p"></i></a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="description-picture col-md-4">
-                    <div class="solo-wrapper-block">
-                        <div class="individual-picture">
-                            <img src="images/Layer-17.png">
-                            <div class="red-overlay">
-                                <p CLASS="overlay-text">Ведущий дизайнер</p>
-                            </div>
-                        </div>
-
-                        <p class="director"> ИМЯ. Ведущий дизайнер. </p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at
-                            erat hendrerit dictum.
-                            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus
-                            diam vitae est.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <div class="wrapper-oborot">
-                            <div class="icon-social col-md-2 icon-size-6">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                            <div class="icon-social col-md-2 icon-size-7">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </div>
-                            <div class="icon-social col-md-2 icon-size-8">
-                                <a href="#"><i class="fab fa-google-plus"></i></a>
-                            </div>
-                            <div class="icon-social col-md-2 icon-size-9">
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
-
-                            <div class="icon-social col-md-2 icon-size-10">
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="about-company">
                 <h2> О КОМПАНИИ</h2>
@@ -270,20 +174,18 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-8">
                         <div class="wrapper-contacts-form">
-                            <form>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                           aria-describedby="emailHelp" placeholder="Ваше имя">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                           placeholder="e-mail">
-                                </div>
-                                <div class="form-group">
-                                    <textarea placeholder="Ваше сообщение ..." class="form-control" id="exampleTextarea"
-                                              rows="3"></textarea>
-                                </div>
+                            <form action="{{ action('WelcomeController@contact') }}" method="post">
+                                {{ csrf_field() }}
 
+                                <div class="form-group">
+                                    <input name="name" type="text" class="form-control" placeholder="Ваше имя" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input name="email" type="email" class="form-control" placeholder="e-mail" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Ваше сообщение ..." class="form-control" rows="3" required="required"></textarea>
+                                </div>
                                 <button type="submit" class="btn btn-submit">ОТПРАВИТЬ</button>
                             </form>
                         </div>
@@ -298,8 +200,8 @@
                                         <i class="fas fa-phone phone"></i>
                                     </div>
                                     <div class="contact-item-icon-info">
-                                        <p><a href="tel:+(050) 239-21-94">(050) 239-21-94</a></p>
-                                        <p><a href="tel:+(0542) 659-111">(0542) 659-111</a></p>
+                                        <p><a href="tel:+{{ setting('site.phone_1') }}">{{ setting('site.phone_1') }}</a></p>
+                                        <p><a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a></p>
                                     </div>
                                 </div>
 
@@ -308,8 +210,7 @@
                                         <i class="fas fa-at"></i>
                                     </div>
                                     <div class="contact-item-icon-info">
-                                        <p class="contact-item-email"><a href="mailto:hello@rc.sumy.uas">hello@rc.sumy.uas</a>
-                                        </p>
+                                        <p class="contact-item-email"><a href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -321,10 +222,7 @@
                                             <i class="fas fa-envelope"></i>
                                         </div>
                                         <div class="contact-item-icon-info">
-                                            <p>ул. Соборная, 29Г</p>
-                                            <p>ул. Горького, 17</p>
-                                            <p>г. Сумы</p>
-                                            <p>Украина</p>
+                                            <p>{{ setting('site.address') }}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -8,237 +8,9 @@
 @endsection
 
 @section('content')
-    <section class="slider-part">
-        <div class="container-fluid">
-            <!-- Set up your HTML -->
-            <div class="owl-carousel header-slider owl-theme">
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
+    @include('partials.slider')
 
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
-
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
-
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
-
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
-
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <img src="images/slider-item.png" class="slider-image" alt="">
-
-                    <div class="slider-content">
-
-                        <div class="top-block">
-
-                        </div>
-
-                        <div class="main-block">
-                            <img class="red-grid" src="images/red-grid.png" alt="">
-                            <h1 class="slider-header">Широкоформатная<br>печать</h1>
-                        </div>
-
-                        <div class="bottom-block">
-                            <p class="bottom-paragraph">Наиболее востребованный и популярный способ получения четких
-                                цветных изображений больших форматов
-
-                                <a href="" class="details-link">Подробнее...</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="categories">
-        <div class="container">
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_1.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        ДИЗАЙН
-                        <br> <br>
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_2.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        НАРУЖНАЯ
-                        РЕКЛАМА
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_3.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        ПЕЧАТЬ <br>
-                        > до 6M ш. <
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_4.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        ЛАЗЕРНАЯ <br>
-                        РЕЗКА
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_5.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        ТРАФАРЕТНАЯ
-                        ПЕЧАТЬ
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_6.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        ПЛОТТЕРНАЯ
-                        РЕЗКА
-                    </p>
-                </a>
-            </div>
-
-            <div class="categories_item">
-                <a href="#">
-                    <img class="categories_item_visible" src="images/categories_item_7.png">
-                    <img class="categories_item_hover" src="images/categories_item_6.png">
-                    <p>
-                        СУВЕНИРНАЯ ПРОДУКЦИЯ
-                    </p>
-                </a>
-            </div>
-
-        </div>
-    </section>
-    <div class="categories_margin_bg"></div>
-
+    @include('partials.categories')
 
     <section class="contact_info">
         <div class="container">
@@ -273,8 +45,12 @@
                                                 <i class="fas fa-phone phone"></i>
                                             </div>
                                             <div class="contact-item-icon-info">
-                                                <p><a href="tel:+(050) 239-21-94">(050) 239-21-94</a></p>
-                                                <p><a href="tel:+(0542) 659-111">(0542) 659-111</a></p>
+                                                <p>
+                                                    <a href="tel:+{{ setting('site.phone_1') }}">{{ setting('site.phone_1') }}</a>
+                                                </p>
+                                                <p>
+                                                    <a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a>
+                                                </p>
                                             </div>
                                         </div>
 
@@ -283,8 +59,8 @@
                                                 <i class="fas fa-at"></i>
                                             </div>
                                             <div class="contact-item-icon-info">
-                                                <p class="contact-item-email"><a
-                                                            href="mailto:hello@rc.sumy.ua">hello@rc.sumy.ua</a>
+                                                <p class="contact-item-email">
+                                                    <a href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -294,10 +70,7 @@
                                                 <i class="fas fa-envelope"></i>
                                             </div>
                                             <div class="contact-item-icon-info">
-                                                <p>ул. Соборная, 29Г</p>
-                                                <p>ул. Горького, 17</p>
-                                                <p>г. Сумы</p>
-                                                <p>Украина</p>
+                                                <p>{{ setting('site.address') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -317,21 +90,25 @@
                                 <p class="form-sub-text">Заполните форму для связи с нами.</p>
                             </div>
 
-                            <form class="contacts-form">
+                            <form class="contacts-form" action="{{ action('WelcomeController@contact') }}"
+                                  method="post">
+                                {{ csrf_field() }}
+
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control"
-                                           aria-describedby="emailHelp" placeholder="Ваше имя">
+                                    <input name="name" type="text" class="form-control" placeholder="Ваше имя"
+                                           required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" id="exampleInputPassword1"
-                                           placeholder="e-mail">
+                                    <input name="email" type="email" class="form-control" placeholder="e-mail"
+                                           required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" id="exampleInputPassword2"
-                                           placeholder="Тема сообщения ...">
+                                    <input type="text" name="subject" class="form-control"
+                                           placeholder="Тема сообщения ..." required="required">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" placeholder="Ваше сообщение ..." class="form-control" rows="3"></textarea>
+                                    <textarea name="message" placeholder="Ваше сообщение ..." class="form-control"
+                                              rows="3" required="required"></textarea>
                                 </div>
 
                                 <div class="form-buttons">
@@ -355,7 +132,13 @@
                         </div>
 
                         <div class="wrapper-map">
-                            <div id="map"></div>
+                            <div id="map">
+
+                                @if(setting('site.map'))
+                                    {!! setting('site.map') !!}
+                                @endif
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -368,32 +151,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.filterizr.min.js"></script>
 
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPK3GeLI9hN0Pc1xqLeRFNc7nxX7OBFX0&callback=initMap">
-    </script>
-
     <script>
-        var lat = +"40.403022";
-        var lng = +"49.848786";
-
-        function initMap() {
-            var element = document.getElementById('map');
-            var options = {
-                zoom: 14,
-                center: {lat, lng}
-            };
-            var myMap = new google.maps.Map(element, options);
-            addMarker({lat, lng});
-
-            function addMarker(coordinates) {
-                var marker = new google.maps.Marker({
-                    position: coordinates,
-                    map: myMap,
-//                icon: 'img/map_icon.png'
-                });
-            }
-        }
-
         $(function () {
             var f = $('.filtr-container').filterizr({controlsSelector: '.fltr-controls'});
             $('.color-container-1').filterizr({controlsSelector: '.color-controls-1'});

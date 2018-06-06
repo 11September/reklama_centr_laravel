@@ -18,6 +18,7 @@ Route::get('/service-{slug}', 'WelcomeController@service');
 Route::get('/search', 'WelcomeController@search');
 Route::post('/search-result', 'WelcomeController@serch_result');
 
+Route::post('/feedback', 'WelcomeController@contact');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

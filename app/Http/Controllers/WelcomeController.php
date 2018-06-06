@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Team;
 use App\Page;
-use App\Risk;
-use App\About;
-use App\Contact;
-use App\Principle;
-use App\Belonging;
-use App\Mail\ContactUs;
+use App\Photo;
+use App\Client;
+use App\Galery;
+use App\Feedback;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -20,7 +19,14 @@ class WelcomeController extends Controller
      */
     public function index(Request $request)
     {
-        return view('welcome');
+        $teams = Team::all();
+        $clients = Client::all();
+        $galleries = Galery::with('photos')->get();
+//        $photos = Photo::render($galleries);
+
+//        dd($galleries);
+
+        return view('welcome', compact('teams', 'clients', 'galleries'));
     }
 
     public function contacts()
@@ -62,22 +68,22 @@ class WelcomeController extends Controller
     public function contact(Request $request)
     {
         $this->validate($request, [
-           'name' => 'required',
-           'email' => 'email',
-           'message' => 'required',
+           'name' => 'required|max:255',
+           'email' => 'required|email',
+           'subject' => 'max:255',
+           'message' => 'required|max:2000',
         ]);
 
+//        $message = $request->all();
+//        \Mail::to($request->email)->send(new ContactUs($message));
 
-        $message = $request->all();
-        \Mail::to($request->email)->send(new ContactUs($message));
+        $feedback = new Feedback();
+        $feedback->name = $request->name;
+        $feedback->email = $request->email;
+        $feedback->subject = $request->subject;
+        $feedback->message = $request->message;
+        $feedback->save();
 
-        $contact = new Contact;
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->phone = $request->phone;
-        $contact->message = $request->message;
-        $contact->save();
-
-        return response()->json('Ваше сообщение доставлено!');
+        return redirect()->back();
     }
 }

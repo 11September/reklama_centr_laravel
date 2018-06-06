@@ -93,8 +93,13 @@
 }
 
 #map {
-    height:730px;
-    width: 100%;
+    height:730px !important;
+    width: 100% !important;
+}
+
+#map iframe{
+    width:inherit !important;
+    height:inherit !important;
 }
 /* Map end */
 

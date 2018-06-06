@@ -11,21 +11,35 @@
                         </div>
                         <div class="footer-wrapper-social">
                             <div class="wrapper-wrapper-social-block">
-                                <a class="social-link" href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="social-link" href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="social-link" href="#">
-                                    <i class="fab fa-google-plus"></i>
-                                </a>
-                                <a class="social-link" href="#">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a class="social-link" href="#">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
+                                @if(setting('site.facebook_link'))
+                                    <a class="social-link" href="{{ setting('site.facebook_link') }}">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                @endif
+
+                                @if(setting('site.twitter_link'))
+                                    <a class="social-link" href="{{ setting('site.twitter_link') }}">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                @endif
+
+                                @if(setting('site.google_link'))
+                                    <a class="social-link" href="{{ setting('site.google_link') }}">
+                                        <i class="fab fa-google-plus"></i>
+                                    </a>
+                                @endif
+
+                                @if(setting('site.youtube_link'))
+                                    <a class="social-link" href="{{ setting('site.youtube_link') }}">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                @endif
+
+                                @if(setting('site.linkedin_link'))
+                                    <a class="social-link" href="{{ setting('site.linkedin_link') }}">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -72,7 +86,8 @@
                         <ul class="footer-services-menu">
 
                             @foreach($productions as $production)
-                                <li><a href="{{ url('service-' . $production->slug) }}">{{ $production->title }}</a></li>
+                                <li><a href="{{ url('service-' . $production->slug) }}">{{ $production->title }}</a>
+                                </li>
                             @endforeach
 
                             {{--<li><a href="">Наружная реклама</a></li>--}}
@@ -109,7 +124,7 @@
                                 Made with <i class="fas fa-heart"></i>
                                 by <a style="color: #ef3a41" href="http://redbox.in.ua/" target="_blank">Redbox</a>
                             @else
-                                 LocalService
+                                LocalService
                             @endif
                         </span>
                     </p>
