@@ -462,6 +462,13 @@ a, a:hover, a:visited, a:link {
 
 /* categories */
 
+.wrapper-categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
 .categories {
     background-color: #e4e4e4;
     padding: 50px 0 25px;
@@ -494,6 +501,30 @@ a, a:hover, a:visited, a:link {
     display: none;
 }
 
+.categories_item_overlay{
+    display: none;
+}
+
+.categories_item_overlay svg{
+    color: white;
+    font-size: 30px;
+}
+
+.categories_item:hover .categories_item_overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 154px;
+    background-color: #ef3a41;
+}
+
+
+
+.categories_item:hover categories_item_visible{
+    display: none;
+}
+
 .categories_item:hover .categories_item_hover {
     display: inline-block;
 }
@@ -508,12 +539,14 @@ a, a:hover, a:visited, a:link {
 }
 
 .category_item_effect{
-    transform: skewX(-25deg);
+    transform: skewX(-20deg);
     overflow: hidden;
     width: 154px;
     text-align: center;
     margin: 0 auto;
 }
+
+
 
 .categories_margin_bg {
     height: 1px;
