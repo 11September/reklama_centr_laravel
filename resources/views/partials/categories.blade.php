@@ -5,10 +5,10 @@
             <div class="categories_item">
                 <a href="{{ url('service-' . $category->slug) }}">
 
-                    @if($category->image)
-                        <img class="categories_item_visible"src="{{ asset('storage/' . $category->image) }}">
+                    @if(isset($category->image) && !empty($category->image))
+                        <img class="categories_item_visible" src="{{ asset('storage/' . $category->image) }}">
                     @else
-                        <img class="categories_item_visible"src="images/categories_item_7.png">
+                        <img class="categories_item_visible" src="images/categories_item_7.png">
                     @endif
 
                     <img class="categories_item_hover" src="images/categories_item_6.png">

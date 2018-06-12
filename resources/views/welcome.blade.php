@@ -265,7 +265,8 @@
 
         $('.header-slider').owlCarousel({
             items: 1,
-            dots: true
+            dots: true,
+            autoplay: true
         });
     </script>
 @endsection

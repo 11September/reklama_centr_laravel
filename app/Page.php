@@ -31,7 +31,7 @@ class Page extends Model
 
     public static function categories()
     {
-        $services = static::select('id', 'title', 'slug')
+        $services = static::select('id', 'title', 'slug', 'image')
             ->where('link', 'Enable')
             ->get();
 

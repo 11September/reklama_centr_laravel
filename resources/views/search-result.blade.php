@@ -8,7 +8,6 @@
 
 @section('content')
     @include('partials.slider')
-    @include('partials.categories')
 
     <section class="service_drunk">
         <div class="container">
@@ -51,7 +50,8 @@
     <script>
         $('.header-slider').owlCarousel({
             items: 1,
-            dots: true
+            dots: true,
+            autoplay: true
         });
     </script>
 @endsection

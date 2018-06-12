@@ -8,7 +8,6 @@
 
 @section('content')
     @include('partials.slider')
-    @include('partials.categories')
 
     <section class="service_drunk">
         <div class="container">
@@ -60,9 +59,10 @@
 //            window.filterizr = f;
 //        });
 
-        $('.header-slider').owlCarousel({
-            items: 1,
-            dots: true
-        });
+$('.header-slider').owlCarousel({
+    items: 1,
+    dots: true,
+    autoplay: true
+});
     </script>
 @endsection

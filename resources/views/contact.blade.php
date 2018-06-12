@@ -10,8 +10,6 @@
 @section('content')
     @include('partials.slider')
 
-    @include('partials.categories')
-
     <section class="contact_info">
         <div class="container">
             <div class="row">
@@ -171,7 +169,8 @@
 
         $('.header-slider').owlCarousel({
             items: 1,
-            dots: true
+            dots: true,
+            autoplay: true
         });
     </script>
 @endsection

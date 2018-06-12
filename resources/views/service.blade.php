@@ -8,7 +8,6 @@
 
 @section('content')
     @include('partials.slider')
-    @include('partials.categories')
 
     <section class="service_drunk">
         <div class="container">
@@ -50,7 +49,7 @@
                         <div class="interested_in">
 
                             @foreach($related_services as $related_service)
-                                <a href="{{ url('service-' . $related_service->slug) }}" >
+                                <a href="{{ url('service-' . $related_service->slug) }}">
                                     <img src="images/service_drunk_menu_point.png">
                                     <img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">
                                     <p>{{ $related_service->title }}</p>
@@ -58,34 +57,34 @@
                             @endforeach
 
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Печать на пленке</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Печать на пленке</p>--}}
                             {{--</a>--}}
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Печать на баннере</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Печать на баннере</p>--}}
                             {{--</a>--}}
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Интерьерная печать</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Интерьерная печать</p>--}}
                             {{--</a>--}}
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Печать бигбордов и больших форматов</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Печать бигбордов и больших форматов</p>--}}
                             {{--</a>--}}
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Печать на холсте</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Печать на холсте</p>--}}
                             {{--</a>--}}
                             {{--<a href="#" >--}}
-                                {{--<img src="images/service_drunk_menu_point.png">--}}
-                                {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
-                                {{--<p>Печать на сетке</p>--}}
+                            {{--<img src="images/service_drunk_menu_point.png">--}}
+                            {{--<img class="service_drunk_hover_img" src="images/service_drunk_menu_point2.png">--}}
+                            {{--<p>Печать на сетке</p>--}}
                             {{--</a>--}}
                         </div>
                     </div>
@@ -102,20 +101,21 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <script>
-//        $(function () {
-//            var f = $('.filtr-container').filterizr({controlsSelector: '.fltr-controls'});
-//            $('.color-container-1').filterizr({controlsSelector: '.color-controls-1'});
-//            $('.color-container-2').filterizr({controlsSelector: '.color-controls-2', layout: 'packed'});
-//            $('.color-container-3').filterizr({controlsSelector: '.color-controls-3', layout: 'sameHeight'});
-//            $('.color-container-4').filterizr({controlsSelector: '.color-controls-4', layout: 'packed'});
-//            $('.color-container-5').filterizr({controlsSelector: '.color-controls-5', layout: 'horizontal'});
-//            $('.color-container-6').filterizr({controlsSelector: '.color-controls-6', layout: 'vertical'});
-//            window.filterizr = f;
-//        });
+        //        $(function () {
+        //            var f = $('.filtr-container').filterizr({controlsSelector: '.fltr-controls'});
+        //            $('.color-container-1').filterizr({controlsSelector: '.color-controls-1'});
+        //            $('.color-container-2').filterizr({controlsSelector: '.color-controls-2', layout: 'packed'});
+        //            $('.color-container-3').filterizr({controlsSelector: '.color-controls-3', layout: 'sameHeight'});
+        //            $('.color-container-4').filterizr({controlsSelector: '.color-controls-4', layout: 'packed'});
+        //            $('.color-container-5').filterizr({controlsSelector: '.color-controls-5', layout: 'horizontal'});
+        //            $('.color-container-6').filterizr({controlsSelector: '.color-controls-6', layout: 'vertical'});
+        //            window.filterizr = f;
+        //        });
 
         $('.header-slider').owlCarousel({
             items: 1,
-            dots: true
+            dots: true,
+            autoplay: true
         });
     </script>
 @endsection
