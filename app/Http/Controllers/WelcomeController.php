@@ -86,4 +86,26 @@ class WelcomeController extends Controller
 
         return redirect()->back();
     }
+
+    public function contactWithCaptcha(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            'subject' => 'max:255',
+            'message' => 'required|max:2000',
+        ]);
+
+//        $message = $request->all();
+//        \Mail::to($request->email)->send(new ContactUs($message));
+
+        $feedback = new Feedback();
+        $feedback->name = $request->name;
+        $feedback->email = $request->email;
+        $feedback->subject = $request->subject;
+        $feedback->message = $request->message;
+        $feedback->save();
+
+        return redirect()->back();
+    }
 }

@@ -88,7 +88,7 @@
                                 <p class="form-sub-text">Заполните форму для связи с нами.</p>
                             </div>
 
-                            <form class="contacts-form" action="{{ action('WelcomeController@contact') }}"
+                            <form class="contacts-form" action="{{ action('WelcomeController@contactWithCaptcha') }}"
                                   method="post">
                                 {{ csrf_field() }}
 
