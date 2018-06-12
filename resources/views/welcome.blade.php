@@ -51,17 +51,18 @@
                         <div class="filtr-container">
 
                             @foreach($galleries as $gallery)
-                                <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item" data-category="0, {{ $gallery->id }}"
-                                     data-sort="{{ $gallery->category }}">
+                                @foreach($gallery->photos as $photo)
+                                    <div class="col-xs-5 col-sm-6 col-md-6 col-lg-3 filtr-item"
+                                         data-category="0, {{ $photo->galery_id }}"
+                                         data-sort="{{ $photo->galery_id }}">
 
-                                    @foreach($gallery->photos as $photo)
                                         <a href="{{ "storage/" . $photo->image }}" data-fancybox>
                                             <img class="img-responsive" src="{{ "storage/" . $photo->image }}">
                                             <img class="our_works_img_hover" src="{{ asset('images/our_works_item_7.png') }}">
                                         </a>
-                                    @endforeach
 
-                                </div>
+                                    </div>
+                                @endforeach
                             @endforeach
 
                         </div>
@@ -178,13 +179,16 @@
                                 {{ csrf_field() }}
 
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Ваше имя" required="required">
+                                    <input name="name" type="text" class="form-control" placeholder="Ваше имя"
+                                           required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input name="email" type="email" class="form-control" placeholder="e-mail" required="required">
+                                    <input name="email" type="email" class="form-control" placeholder="e-mail"
+                                           required="required">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" placeholder="Ваше сообщение ..." class="form-control" rows="3" required="required"></textarea>
+                                    <textarea name="message" placeholder="Ваше сообщение ..." class="form-control"
+                                              rows="3" required="required"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-submit">ОТПРАВИТЬ</button>
                             </form>
@@ -200,8 +204,12 @@
                                         <i class="fas fa-phone phone"></i>
                                     </div>
                                     <div class="contact-item-icon-info">
-                                        <p><a href="tel:+{{ setting('site.phone_1') }}">{{ setting('site.phone_1') }}</a></p>
-                                        <p><a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a></p>
+                                        <p>
+                                            <a href="tel:+{{ setting('site.phone_1') }}">{{ setting('site.phone_1') }}</a>
+                                        </p>
+                                        <p>
+                                            <a href="tel:+{{ setting('site.phone_2') }}">{{ setting('site.phone_2') }}</a>
+                                        </p>
                                     </div>
                                 </div>
 
@@ -210,7 +218,9 @@
                                         <i class="fas fa-at"></i>
                                     </div>
                                     <div class="contact-item-icon-info">
-                                        <p class="contact-item-email"><a href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a></p>
+                                        <p class="contact-item-email"><a
+                                                    href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
