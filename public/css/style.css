@@ -482,6 +482,14 @@ a, a:hover, a:visited, a:link {
     width: 154px;
 }
 
+/*.categories_item_visible{*/
+    /*width:154px;*/
+/*}*/
+
+/*.categories_item_hover{*/
+    /*width:180px;*/
+/*}*/
+
 .categories_item:hover .categories_item_visible {
     display: none;
 }
@@ -500,9 +508,11 @@ a, a:hover, a:visited, a:link {
 }
 
 .category_item_effect{
-    transform: skewX(-15deg);
+    transform: skewX(-25deg);
     overflow: hidden;
     width: 154px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .categories_margin_bg {
