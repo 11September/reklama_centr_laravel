@@ -89,7 +89,7 @@
 
                     @foreach($clients as $client)
                         <a href="{{ $client->link }}">
-                            <div class="bg-img-clients all-item">
+                            <div class="bg-img-clients all-item image-effect">
                                 <img src="{{ "storage/" . $client->image }}" alt="">
                             </div>
                         </a>
