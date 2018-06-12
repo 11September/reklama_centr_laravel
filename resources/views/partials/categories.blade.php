@@ -9,10 +9,13 @@
                             @if(isset($category->image) && !empty($category->image))
                                 <img class="categories_item_visible" src="{{ asset('storage/' . $category->image) }}">
                             @else
-                                <img class="categories_item_visible" src="images/categories_item_7.png">
+                                <div class="categories_item_overlay">
+                                    <i class="fas fa-plus "></i>
+                                </div>
+                                {{--<img class="categories_item_visible category_item_effect_default" src="images/categories_item_7.png">--}}
                             @endif
 
-                            <div class="categories_item_overlay">
+                            <div class="categories_item_overlay categories_item_overlay_default">
                                 <i class="fas fa-plus "></i>
                             </div>
 
