@@ -1666,7 +1666,7 @@ select {
 
 
 .oborot{
-    padding: 40px 0px;
+    padding: 40px 0;
     justify-content: space-around;
 }
 
@@ -1704,33 +1704,8 @@ select {
     height: 50px;
     background-image: url("../images/css_sprites (1).png");
     background-position:  -220px -10px;
-
 }
 
-@media (max-width: 768px){
-    .all-item{
-        margin-right: 15px;
-
-    }
-    .oborot{
-        justify-content: flex-start;
-    }
-
-
-}
-
-@media (max-width: 480px){
-    .oborot{
-        justify-content: center;
-    }
-    .all-item {
-        margin-right: 50px;
-        margin-bottom: 35px;
-    }
-    .wrapper-text-2 h2{
-        text-align: center;
-    }
-}
 .icon-social svg:hover {
     color:red;
 }
@@ -1760,14 +1735,12 @@ select {
     visibility: hidden;
 }
 
-
 .individual-picture{
     position: relative;
 }
 
-
 .individual-picture:hover .red-overlay{
-  visibility: visible;
+    visibility: visible;
 }
 
 .overlay-text{
@@ -1783,8 +1756,28 @@ select {
     font-size: 28px;
 }
 
+@media (max-width: 768px){
+    .all-item{
+        margin-right: 15px;
 
+    }
+    .oborot{
+        justify-content: flex-start;
+    }
+}
 
+@media (max-width: 480px){
+    .oborot{
+        justify-content: center;
+    }
+    .all-item {
+        margin-right: 50px;
+        margin-bottom: 35px;
+    }
+    .wrapper-text-2 h2{
+        text-align: center;
+    }
+}
 
 @media(max-width: 992px){
 
@@ -1814,23 +1807,24 @@ select {
     .about-company::before{
         right: -39%;
     }
-
 }
 
 @media(max-width: 768px){
-
     .icon-social svg{
         font-size: 22px;
     }
    .wrapper-oborot{
        justify-content: space-evenly;
    }
-
 }
-
 
 @media (max-width: 320px){
     .about-company::before {
         right: -23%!important;}
 
+}
+
+.g-recaptcha{
+    float: right !important;
+    margin: 10px 0 !important;
 }

@@ -113,6 +113,13 @@
                                     {!! NoCaptcha::display() !!}
                                 </div>
 
+                                <div class="clearfix"></div>
+
+                                @include('errors.listErrors')
+                                @include('errors.captcha')
+
+                                <div class="clearfix"></div>
+
                                 <div class="form-buttons">
                                     <div class="row">
                                         <div class="col-md-6"></div>
@@ -150,6 +157,8 @@
 @endsection
 
 @section('scripts')
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.filterizr.min.js"></script>
 

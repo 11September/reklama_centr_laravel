@@ -92,8 +92,9 @@ class WelcomeController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255',
             'email' => 'required|email',
-            'subject' => 'max:255',
+            'subject' => 'required|max:255',
             'message' => 'required|max:2000',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
 //        $message = $request->all();
