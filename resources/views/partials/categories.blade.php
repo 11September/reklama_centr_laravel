@@ -1,6 +1,6 @@
 <section class="categories">
     <div class="container">
-        <div class="wrapper-categories">
+        <div class="wrapper-categories row">
             @foreach($categories as $category)
                 <div class="categories_item">
                     <div class="category_item_effect">

@@ -472,7 +472,7 @@ a, a:hover, a:visited, a:link {
     padding: 50px 0 25px;
     text-align: center;
     border-bottom: 1px solid #bcbcbc;
-    height: 260px;
+    min-height: 260px;
 }
 
 .categories p {
@@ -530,6 +530,10 @@ a, a:hover, a:visited, a:link {
     background-color: #ef3a41;
 }
 
+.categories_item:hover .categories_item_overlay_default{
+    border: none !important;
+}
+
 .category_item_effect_default{
 
 }
@@ -552,7 +556,7 @@ a, a:hover, a:visited, a:link {
 
 .categories_item {
     width: 170px;
-    height: 130px;
+    height: 210px;
     display: inline-block;
 }
 
