@@ -109,6 +109,10 @@
                                               rows="3" required="required"></textarea>
                                 </div>
 
+                                <div class="form-group">
+                                    {!! NoCaptcha::display() !!}
+                                </div>
+
                                 <div class="form-buttons">
                                     <div class="row">
                                         <div class="col-md-6"></div>
