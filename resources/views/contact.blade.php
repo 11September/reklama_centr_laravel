@@ -93,20 +93,20 @@
                                 {{ csrf_field() }}
 
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Ваше имя"
+                                    <input value="{{ old('name') }}" name="name" type="text" class="form-control" placeholder="Ваше имя"
                                            required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input name="email" type="email" class="form-control" placeholder="e-mail"
+                                    <input value="{{ old('email') }}" name="email" type="email" class="form-control" placeholder="e-mail"
                                            required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control"
+                                    <input value="{{ old('subject') }}" type="text" name="subject" class="form-control"
                                            placeholder="Тема сообщения ..." required="required">
                                 </div>
                                 <div class="form-group">
                                     <textarea name="message" placeholder="Ваше сообщение ..." class="form-control"
-                                              rows="3" required="required"></textarea>
+                                              rows="3" required="required">{{ old('message') }}</textarea>
                                 </div>
 
                                 <div class="form-group">
@@ -115,8 +115,11 @@
 
                                 <div class="clearfix"></div>
 
-                                @include('errors.listErrors')
-                                @include('errors.captcha')
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                    </span>
+                                @endif
 
                                 <div class="clearfix"></div>
 
